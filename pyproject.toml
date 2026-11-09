@@ -7,7 +7,11 @@ authors = [
     { name = "younes-oss", email = "aitchattouyounes@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+]
 
 [project.scripts]
 predictmind = "predictmind:main"
