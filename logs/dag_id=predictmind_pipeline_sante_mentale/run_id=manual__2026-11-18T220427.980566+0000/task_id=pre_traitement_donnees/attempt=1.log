@@ -1,0 +1,5 @@
+{"timestamp":"2026-11-18T22:04:31.132207","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2026-11-18T22:04:31.142522","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/pipeline_sante_mentale_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-11-18T22:04:36.088245Z","level":"info","event":"--- Debut du pretraitement des donnees ---","chan":"stdout","logger":"task"}
+{"timestamp":"2026-11-18T22:04:36.145986Z","level":"info","event":"Pretraitement termine et les Donnees sauvegardees dans saved_models/donnees_et_preprocesseur.pkl","chan":"stdout","logger":"task"}
+{"timestamp":"2026-11-18T22:04:36.149334","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
