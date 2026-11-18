@@ -7,13 +7,22 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 
+from pathlib import Path
+import pandas as pd
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATA_PATH = BASE_DIR / "data" / "student-mental-health.csv"
+
+
+
 def executer_preprocessing():
     print("--- Debut du pretraitement des donnees ---")
+
+    df = pd.read_csv(DATA_PATH)
     
-    chemin_csv = "./Data/student-mental-health.csv"
-    df = pd.read_csv(chemin_csv)
     
-   
     cols_a_ignorer = ['Student_ID', 'Mental_Health_Risk']
     colonnes_features = [col for col in df.columns if col not in cols_a_ignorer]
     
